@@ -1,0 +1,95 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+  text-align: center;
+  line-height: 1.6;
+}
+
+header {
+  padding: 2rem 1rem 1rem;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0.5rem 0 0;
+  font-size: 2rem;
+  color: #222;
+}
+
+h2 {
+  font-weight: 400;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+section {
+  max-width: 700px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+h3 {
+  color: #7a4e74; /* subtle purple accent */
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  text-align: left;
+}
+
+ul li strong {
+  color: #e68a47; /* muted orange */
+}
+
+.button {
+  display: inline-block;
+  background-color: #e68a47;
+  color: #fff;
+  padding: 0.8rem 1.4rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #cf7a3c;
+}
+
+.button.secondary {
+  background-color: #7a4e74;
+}
+
+.button.secondary:hover {
+  background-color: #623c5c;
+}
+
+.voting {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+footer {
+  font-size: 0.85rem;
+  color: #666;
+  padding: 2rem 1rem;
+  border-top: 1px solid #eee;
+}

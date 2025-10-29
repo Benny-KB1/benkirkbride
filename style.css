@@ -15,23 +15,18 @@ header {
   background-color: #ffffff;
 }
 
-.profile-container {
-  width: 100%;
-  max-width: 360px;
+/* ✅ Full image visible, smaller and centered */
+.profile-pic {
+  display: block;
+  width: 85%;               /* Scales image down proportionally */
+  max-width: 300px;         /* Keeps it elegant on large screens */
   height: auto;
-  aspect-ratio: 4 / 5; /* preserves portrait ratio; change to match your photo if needed */
-  margin: 0 auto 1.5rem;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  background-image: url('ben-kirkbride-headshot.jpg');
-  background-size: contain;        /* shows full image, no cropping */
-  background-repeat: no-repeat;
-  background-position: center top; /* positions head towards top center */
-  background-color: #ffffff;       /* fills any empty space */
+  margin: 0 auto 1.5rem auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
-
+/* ----------- Headings ----------- */
 h1 {
   margin: 0.5rem 0 0;
   font-size: 2.2rem;
@@ -61,7 +56,7 @@ section {
 }
 
 h3 {
-  color: #7a4e74; /* Subtle purple accent */
+  color: #7a4e74;
   font-size: 1.3rem;
   text-align: center;
 }
@@ -79,7 +74,7 @@ ul li {
 
 ul li::before {
   content: "•";
-  color: #e68a47; /* Muted orange bullet */
+  color: #e68a47;
   font-weight: bold;
   display: inline-block;
   width: 1rem;
@@ -91,9 +86,15 @@ ul li strong {
 }
 
 /* ----------- Buttons and Links ----------- */
+
+/* ✅ Centers the links neatly */
+.links {
+  text-align: center;
+}
+
 .button {
   display: inline-block;
-  background-color: #e68a47; /* Muted orange */
+  background-color: #e68a47;
   color: #ffffff;
   padding: 0.9rem 1.6rem;
   border-radius: 30px;
@@ -106,14 +107,16 @@ ul li strong {
 
 .button:hover {
   background-color: #cf7a3c;
+  transform: scale(1.03);
 }
 
 .button.secondary {
-  background-color: #7a4e74; /* Soft purple */
+  background-color: #7a4e74;
 }
 
 .button.secondary:hover {
   background-color: #623c5c;
+  transform: scale(1.03);
 }
 
 /* ----------- Voting Info ----------- */
@@ -148,13 +151,14 @@ footer {
   }
 
   .profile-pic {
-    width: 160px;
+    width: 90%;
+    max-width: 240px;
   }
 
   .button {
     width: 80%;
     padding: 0.8rem;
-    margin: 0.4rem auto;
+    margin: 0.5rem auto;
     display: block;
   }
 
@@ -162,9 +166,3 @@ footer {
     font-size: 0.9rem;
   }
 }
-
-
-
-
-
-

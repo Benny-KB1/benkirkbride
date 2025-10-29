@@ -18,13 +18,12 @@ header {
 .profile-pic {
   display: block;
   width: 100%;
-  max-width: 320px;          /* Prevents it from getting too big on desktop */
-  height: auto;              /* Keeps full image ratio */
-  border-radius: 15px;       /* Rounded corners */
-  margin: 0 auto 1.5rem auto;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 360px;   /* adjust if you want it larger/smaller */
+  height: auto;
+  border-radius: 15px;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
-
 
 
 h1 {
@@ -157,6 +156,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 
 
 

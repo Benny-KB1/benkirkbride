@@ -16,13 +16,16 @@ header {
 }
 
 .profile-pic {
-  width: 220px;
-  height: auto;              /* Fixes cropping */
-  border-radius: 50%;        /* Circular shape */
-  object-fit: cover;
+  width: 280px;             /* Balanced size for desktop and mobile */
+  height: auto;             /* Keeps natural proportions */
+  border-radius: 15px;      /* Soft rounded corners */
+  object-fit: contain;      /* Ensures your full head is visible */
+  object-position: center top; /* Centers image nicely */
+  background-color: #ffffff; /* Neutral background to blend cleanly */
   margin-bottom: 1.5rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft depth effect */
 }
+
 
 h1 {
   margin: 0.5rem 0 0;
@@ -154,3 +157,4 @@ footer {
     font-size: 0.9rem;
   }
 }
+

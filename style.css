@@ -1,46 +1,61 @@
+/* ----------- Global Styles ----------- */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   margin: 0;
-  background-color: #fff;
-  color: #333;
+  padding: 0;
+  background-color: #ffffff;
+  color: #333333;
   text-align: center;
   line-height: 1.6;
 }
 
+/* ----------- Header Section ----------- */
 header {
   padding: 2rem 1rem 1rem;
+  background-color: #ffffff;
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
+  width: 220px;
+  height: auto;              /* Fixes cropping */
+  border-radius: 50%;        /* Circular shape */
   object-fit: cover;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   margin: 0.5rem 0 0;
-  font-size: 2rem;
-  color: #222;
+  font-size: 2.2rem;
+  color: #222222;
 }
 
 h2 {
   font-weight: 400;
-  color: #555;
+  color: #555555;
   font-size: 1.1rem;
+  margin-top: 0.3rem;
 }
 
+/* ----------- Section Styles ----------- */
 section {
-  max-width: 700px;
+  max-width: 750px;
   margin: 1.5rem auto;
   padding: 0 1rem;
+  text-align: left;
+}
+
+.bio p,
+.campaign p,
+.voting {
+  font-size: 1rem;
+  color: #333333;
 }
 
 h3 {
-  color: #7a4e74; /* subtle purple accent */
+  color: #7a4e74; /* Subtle purple accent */
   font-size: 1.3rem;
+  text-align: center;
 }
 
 ul {
@@ -49,24 +64,36 @@ ul {
 }
 
 ul li {
-  margin: 0.5rem 0;
-  text-align: left;
+  margin: 0.6rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #e68a47; /* Muted orange bullet */
+  font-weight: bold;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1rem;
 }
 
 ul li strong {
-  color: #e68a47; /* muted orange */
+  color: #e68a47;
 }
 
+/* ----------- Buttons and Links ----------- */
 .button {
   display: inline-block;
-  background-color: #e68a47;
-  color: #fff;
-  padding: 0.8rem 1.4rem;
+  background-color: #e68a47; /* Muted orange */
+  color: #ffffff;
+  padding: 0.9rem 1.6rem;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
-  margin: 0.5rem;
-  transition: background-color 0.3s ease;
+  margin: 0.6rem;
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .button:hover {
@@ -74,22 +101,56 @@ ul li strong {
 }
 
 .button.secondary {
-  background-color: #7a4e74;
+  background-color: #7a4e74; /* Soft purple */
 }
 
 .button.secondary:hover {
   background-color: #623c5c;
 }
 
+/* ----------- Voting Info ----------- */
 .voting {
-  margin: 1rem 0;
+  margin: 1.2rem 0;
   font-size: 0.95rem;
-  color: #444;
+  color: #444444;
+  text-align: center;
 }
 
+/* ----------- Footer ----------- */
 footer {
   font-size: 0.85rem;
-  color: #666;
+  color: #666666;
   padding: 2rem 1rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #eeeeee;
+  text-align: center;
+}
+
+/* ----------- Responsive Design ----------- */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 0 1.2rem;
+  }
+
+  .profile-pic {
+    width: 160px;
+  }
+
+  .button {
+    width: 80%;
+    padding: 0.8rem;
+    margin: 0.4rem auto;
+    display: block;
+  }
+
+  .voting {
+    font-size: 0.9rem;
+  }
 }

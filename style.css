@@ -17,14 +17,14 @@ header {
 
 .profile-pic {
   display: block;
-  max-width: 90%;
-  height: auto;
-  border-radius: 15px;
+  width: 100%;
+  max-width: 320px;          /* Prevents it from getting too big on desktop */
+  height: auto;              /* Keeps full image ratio */
+  border-radius: 15px;       /* Rounded corners */
   margin: 0 auto 1.5rem auto;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  object-fit: none;          /* disables cropping */
-  object-position: center;   /* keeps image centred */
 }
+
 
 
 h1 {
@@ -157,6 +157,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 
 
 

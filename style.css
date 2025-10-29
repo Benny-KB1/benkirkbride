@@ -15,15 +15,21 @@ header {
   background-color: #ffffff;
 }
 
-.profile-pic {
-  display: block;
+.profile-container {
   width: 100%;
-  max-width: 360px;   /* adjust if you want it larger/smaller */
+  max-width: 360px;
   height: auto;
-  border-radius: 15px;
+  aspect-ratio: 4 / 5; /* preserves portrait ratio; change to match your photo if needed */
   margin: 0 auto 1.5rem;
+  border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-image: url('ben-kirkbride-headshot.jpg');
+  background-size: contain;        /* shows full image, no cropping */
+  background-repeat: no-repeat;
+  background-position: center top; /* positions head towards top center */
+  background-color: #ffffff;       /* fills any empty space */
 }
+
 
 
 h1 {
@@ -156,6 +162,7 @@ footer {
     font-size: 0.9rem;
   }
 }
+
 
 
 

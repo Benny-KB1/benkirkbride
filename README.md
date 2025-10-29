@@ -1,1 +1,1 @@
-# bk-aihs-director
+# aihs-director

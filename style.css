@@ -18,11 +18,11 @@ header {
 /* ✅ Full image visible, smaller and centered */
 .profile-pic {
   display: block;
-  width: 85%;               /* Scales image down proportionally */
-  max-width: 300px;         /* Keeps it elegant on large screens */
-  height: auto;
-  border-radius: 15px;
-  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  max-width: 280px;        /* keeps it nicely proportioned on desktop */
+  height: auto;            /* keeps full image ratio */
+  border-radius: 15px;     /* soft rounded corners */
+  margin: 0 auto 1.5rem auto; /* centres image horizontally */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -166,3 +166,4 @@ footer {
     font-size: 0.9rem;
   }
 }
+
